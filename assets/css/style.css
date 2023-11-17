@@ -7,13 +7,13 @@
   .phone-img {
     display: none;
   }
-  
-.slider-img {
+
+  .slider-img {
     display: none;
-}
-.button-container {
+  }
+  .button-container {
     margin-right: 15px;
-}
+  }
 }
 @media screen and (max-width: 480px) {
   #media {
@@ -339,8 +339,6 @@
   }
 }
 
-
-
 .css-1g9bnia {
   margin: 0;
   font-size: 16px;
@@ -361,7 +359,6 @@
     font-size: 16px;
   }
 }
-
 
 .css-xfnouh {
   display: -webkit-box;
@@ -408,7 +405,6 @@
   }
 }
 
-
 .css-1607t1r {
   margin-right: 16px;
 }
@@ -424,7 +420,6 @@
     height: 32px;
   }
 }
-
 
 .css-g7vpte {
   margin: 0;
@@ -453,7 +448,6 @@
     line-height: 1.4;
   }
 }
-
 
 .css-g7vpte {
   margin: 0;
