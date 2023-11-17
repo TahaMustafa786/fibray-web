@@ -4,27 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fontawesome.com/icons/google?f=brands&s=solid" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
   <title>Fibray Web</title>
+  <style>
+    .mobile-icon-styles {
+      height: 41px;
+      width: 60px;
+      margin-left: 9px;
+      margin-top: 5px;
+    }
+  </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-0">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
     <div class="container-fluid p-0">
       <a class="navbar-brand navbar-logo" href="#">fibra<span class="navbar-span">y</span>+</a>
-      <button style="margin-right: 70px;" class="navbar-toggler navbar-toggler-btnn" type="button"
-        data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="button-container">
+        <button class="navbar-toggler navbar-toggler-btnn m-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav navbar-ul mx-auto">
           <li class="nav-item">
@@ -53,7 +61,10 @@
     </div>
   </nav>
   <section class="container-fluid st-section p-0">
-    <img class="img-fluid img-thumbnail" src="assets/img/600x400.png" alt="">
+    <div class="image-container w-100">
+      <img class="p-0 w-100 slider-img" src="assets/img/slider.png" alt="">
+    </div>
+
 
     <section>
       <div class="MuiContainer-root MuiContainer-maxWidthXl css-4461dr p-0">
@@ -67,21 +78,15 @@
             </div>
             <div class="MuiStack-root css-1yghex6">
               <div class="MuiBox-root css-isylzk">
-                <div class="MuiBox-root css-1bfx0ml"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
-                    viewBox="0 0 40 40" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1wgtu1" focusable="false"
-                    aria-hidden="true">
-                    <path fill-rule="evenodd"
-                      d="M29 2H11C9.345 2 8 3.345 8 5v30c0 1.655 1.345 3 3 3h18c1.655 0 3-1.345 3-3V5c0-1.655-1.345-3-3-3zM11 3.5h18c.827 0 1.5.673 1.5 1.5v25.5h-21V5c0-.827.673-1.5 1.5-1.5zM30.5 32v3c0 .827-.673 1.5-1.5 1.5H11c-.827 0-1.5-.673-1.5-1.5v-3h21zm-8.25 1.5h-4.5c-.415 0-.75.335-.75.75s.335.75.75.75h4.5c.415 0 .75-.335.75-.75s-.335-.75-.75-.75zm-3-28.5h1.5c.415 0 .75.335.75.75 0 .368-.265.674-.615.738l-.135.012h-1.5c-.415 0-.75-.335-.75-.75 0-.368.265-.674.615-.738L19.25 5h1.5-1.5zm9 0c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75z">
-                    </path>
-                  </svg>
+                <div class="MuiBox-root css-1bfx0ml">
+                  <img src="assets/img/mobile-icon.svg" alt="mobile svg" class="mobile-icon-styles" />
                   <h4 class="MuiTypography-root MuiTypography-h4 css-gdoho6">3</h4>
                 </div>
                 <div class="MuiBox-root css-ow2jnx">
                   <h2 class="MuiTypography-root MuiTypography-h2 css-c2dybs" data-testclass="tariff-card-info">200<span
                       class="MuiTypography-root MuiTypography-h4 css-1d06pnn"> GB
-                      <!-- -->
-                      <!-- -->a compartir</span></h2><span
-                    class="MuiTypography-root MuiTypography-body2 css-scnbnw">Llamadas ilimitadas</span>
+                      a compartir</span></h2><span class="MuiTypography-root MuiTypography-body2 css-scnbnw">Llamadas
+                    ilimitadas</span>
                 </div>
               </div>
               <hr class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem css-ru5wp">
@@ -144,7 +149,7 @@
               </div>
               <hr class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem css-ru5wp">
               <div class="MuiBox-root css-isylzk" data-testclass="tariff-card-item-wrapper"> <img class="img-lo"
-                  src="assets/img/images (1).png" height="45"></img>
+                  src="assets/img/location-icon.png" height="45"></img>
                 <h2 class="MuiTypography-root MuiTypography-h4 css-d3eoct">Roaming <span class="st-section-span-sec">
                     ZONA 1</span> incluido<span class="MuiTypography-root MuiTypography-body2 css-1dp9mmr"></span></h2>
               </div>
@@ -260,7 +265,7 @@
               </div>
               <hr class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem css-ru5wp">
               <div class="MuiBox-root css-isylzk" data-testclass="tariff-card-item-wrapper"> <img class="img-lo"
-                  src="assets/img/images (1).png" height="45"></img>
+                  src="assets/img/location-icon.png" height="45"></img>
                 <h2 class="MuiTypography-root MuiTypography-h4 css-d3eoct">Roaming <span class="st-section-span-sec">
                     ZONA 1</span> incluido<span class="MuiTypography-root MuiTypography-body2 css-1dp9mmr"></span></h2>
               </div>
@@ -377,7 +382,7 @@
               </div>
               <hr class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem css-ru5wp">
               <div class="MuiBox-root css-isylzk" data-testclass="tariff-card-item-wrapper"> <img class="img-lo"
-                  src="assets/img/images (1).png" height="45"></img>
+                  src="assets/img/location-icon.png" height="45"></img>
                 <h2 class="MuiTypography-root MuiTypography-h4 css-d3eoct">Roaming <span class="st-section-span-sec">
                     ZONA 1</span> incluido<span class="MuiTypography-root MuiTypography-body2 css-1dp9mmr"></span></h2>
               </div>
@@ -413,8 +418,7 @@
     </section>
     <div id="location" class="container-fluid w-100">
       <div class="calc">
-        <img id="loca-img" src="assets/img/download (2).jpg" alt=""><span id="loca-data" class="text-primary">COMPRUEBA
-          TU
+        <img id="loca-img" src="assets/img/world-icon.jpg" alt=""><span id="loca-data" class="text-primary">COMPRUEBA TU
           COBERTURA DE FIBRA </span>
 
         <button id="loca-btn" class=" btn btn-primary">CONSULTAR COBERTURA</button>
@@ -436,9 +440,9 @@
                     src="https://imgsmsc.pepephone.com/fsm6gfd87e6m/4UJHumo1mUWMfHQyFJftGD/83cd550dd3e6ccb6e04557e8398a256f/iconos_modulos_MultiSIM.svg">
                 </div>
                 <h4><b>MultiSIM Apple Watch</h4></b>
-                <p style="margin-top: 10px;">Ya puedes compartir tu tarifa de datos y llamadas con tu Apple Watch.
+                <p class="slider-p">Ya puedes compartir tu tarifa de datos y llamadas con tu Apple Watch.
                 </p>
-                <a style="margin-top: 20px;text-decoration: none;color: rgb(0, 102, 255);;" href="">Saber más</a>
+                <a class="slider-a" href="">Saber más</a>
               </div>
             </div>
             <div class="swiper-slide">
@@ -448,10 +452,10 @@
                     src="https://imgsmsc.pepephone.com/fsm6gfd87e6m/4nQE0SFm7coWynHH7y1SAy/931caf73059e21ef88f77a8cf41c1656/icono_ayuda_5G.svg">
                 </div>
                 <h4><b>5G</h4></b>
-                <p style="margin-top: 10px;">La red 5G ya está disponible en Pepephone. Una considerable mejora en
-                  velocidad con una menor latencia con la última tecnología de red móvil.
+                <p class="slider-p">La red 5G ya está disponible en Pepephone. Una considerable mejora en velocidad con
+                  una menor latencia con la última tecnología de red móvil.
                 </p>
-                <a style="margin-top: 20px;text-decoration: none;color: rgb(0, 102, 255);" href="">Saber más</a>
+                <a class="slider-a" href="">Saber más</a>
               </div>
             </div>
             <div class="swiper-slide">
@@ -461,10 +465,10 @@
                     src="https://imgsmsc.pepephone.com/fsm6gfd87e6m/f354ONu2qv3pkMPdaEw2M/23da4c85406a9e74e51c9d0d97a35017/iconos_modulos_eSIM.svg">
                 </div>
                 <h4><b>eSIM</h4></b>
-                <p style="margin-top: 10px;">La eSIM es la evolución de la tarjeta SIM. Primero debes saber si tu
-                  dispositivo es compatible con dicha tecnología.
+                <p class="slider-p">La eSIM es la evolución de la tarjeta SIM. Primero debes saber si tu dispositivo es
+                  compatible con dicha tecnología.
                 </p>
-                <a style="margin-top: 20px;text-decoration: none;color: rgb(0, 102, 255);;" href="">Saber más</a>
+                <a class="slider-a" href="">Saber más</a>
               </div>
             </div>
             <div class="swiper-slide">
@@ -474,11 +478,11 @@
                     src="https://imgsmsc.pepephone.com/fsm6gfd87e6m/1FA7YLiGnKNZRPrnJ8rPBy/10d51d6693c4a8a6bc3db0158e061cb2/multisim-moviles.svg">
                 </div>
                 <h4><b>MultiSIM</h4></b>
-                <p style="margin-top: 10px;">Comparte tu tarifa de datos y llamadas con cualquier dispositivo (incluido
-                  Apple Watch).
+                <p class="slider-p">Comparte tu tarifa de datos y llamadas con cualquier dispositivo (incluido Apple
+                  Watch).
 
                 </p>
-                <a style="margin-top: 20px;text-decoration: none;color: rgb(0, 102, 255);;" href="">Saber más</a>
+                <a class="slider-a" href="">Saber más</a>
               </div>
             </div>
             <div class="swiper-slide">
@@ -488,10 +492,10 @@
                     src="https://imgsmsc.pepephone.com/fsm6gfd87e6m/4JYcKMZybkEnNiWg6JVGxF/540ea256c6862274758070208e56f5d8/iconos_modulos_Pepeescudo.svg">
                 </div>
                 <h4><b>Pepeescudo</h4></b>
-                <p style="margin-top: 10px;">Queremos ayudarte a que nadie te moleste. Protégete de las llamadas no
-                  deseadas​ con nuestra aplicación gratuita disponible para clientes y no clientes.
+                <p class="slider-p">Queremos ayudarte a que nadie te moleste. Protégete de las llamadas no deseadas​ con
+                  nuestra aplicación gratuita disponible para clientes y no clientes.
                 </p>
-                <a style="margin-top: 20px;text-decoration: none;color: rgb(0, 102, 255);;" href="">Saber más</a>
+                <a class="slider-a" href="">Saber más</a>
               </div>
             </div>
             <div class="swiper-slide">
@@ -501,10 +505,9 @@
                     src="https://imgsmsc.pepephone.com/fsm6gfd87e6m/5MNN4PgRYAO4Fp6T9MPwCg/d83675c5e3d34bae163e2c83fc375a40/iconos_modulos_Acumulables.svg">
                 </div>
                 <h4><b>Acumulagigas</h4></b>
-                <p style="margin-top: 10px;">Acumula los GB de tu tarifa que te sobre cada mes para consumirlos el
-                  siguiente.
+                <p class="slider-p">Acumula los GB de tu tarifa que te sobre cada mes para consumirlos el siguiente.
                 </p>
-                <a style="margin-top: 20px;text-decoration: none;color: rgb(0, 102, 255);;" href="">Saber más</a>
+                <a class="slider-a" href="">Saber más</a>
               </div>
             </div>
           </div>
@@ -520,7 +523,7 @@
         <div class="swiper-scrollbar"></div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
   </section>
   <!-- Testimonial End -->
@@ -584,8 +587,7 @@
                 simetricos
               </td>
               <td id="gb"><span class="mb">90GB</span> compartidas <br>liamadas ilimitadas </td>
-              <td id="tv"><span class="mb"><img src="assets/img/icon0-vector-100-01.jpg" height="40" alt="">TV</span>
-              </td>
+              <td id="tv"><span class="mb"><img src="assets/img/tv-icon.jpg" height="40" alt="">TV</span></td>
               <td id="dolar"><span class="mb text-primary">55,99$/mes</span></td>
               <td id="sabar">Sabar mas</td>
 
@@ -595,8 +597,7 @@
                 simetricos
               </td>
               <td id="gb"><span class="mb">90GB</span> compartidas <br>liamadas ilimitadas </td>
-              <td id="tv"><span class="mb"><img src="assets/img/icon0-vector-100-01.jpg" height="40" alt="">TV</span>
-              </td>
+              <td id="tv"><span class="mb"><img src="assets/img/tv-icon.jpg" height="40" alt="">TV</span></td>
               <td id="dolar"><span class="mb text-primary">55,99$/mes</span></td>
               <td id="sabar">Sabar mas</td>
 
@@ -606,8 +607,7 @@
                 simetricos
               </td>
               <td id="gb"><span class="mb">90GB</span> compartidas <br>liamadas ilimitadas </td>
-              <td id="tv"><span class="mb"><img src="assets/img/icon0-vector-100-01.jpg" height="40" alt="">TV</span>
-              </td>
+              <td id="tv"><span class="mb"><img src="assets/img/tv-icon.jpg" height="40" alt="">TV</span></td>
               <td id="dolar"><span class="mb text-primary">55,99$/mes</span></td>
               <td id="sabar">Sabar mas</td>
 
@@ -617,8 +617,7 @@
                 simetricos
               </td>
               <td id="gb"><span class="mb">90GB</span> compartidas <br>liamadas ilimitadas </td>
-              <td id="tv"><span class="mb"><img src="assets/img/icon0-vector-100-01.jpg" height="40" alt="">TV</span>
-              </td>
+              <td id="tv"><span class="mb"><img src="assets/img/tv-icon.jpg" height="40" alt="">TV</span></td>
               <td id="dolar"><span class="mb text-primary">55,99$/mes</span></td>
               <td id="sabar">Sabar mas</td>
 
@@ -628,8 +627,7 @@
                 simetricos
               </td>
               <td id="gb"><span class="mb">90GB</span> compartidas <br>liamadas ilimitadas </td>
-              <td id="tv"><span class="mb"><img src="assets/img/icon0-vector-100-01.jpg" height="40" alt="">TV</span>
-              </td>
+              <td id="tv"><span class="mb"><img src="assets/img/tv-icon.jpg" height="40" alt="">TV</span></td>
               <td id="dolar"><span class="mb text-primary">55,99$/mes</span></td>
               <td id="sabar">Sabar mas</td>
 
@@ -640,7 +638,7 @@
       </div>
     </div>
   </div>
-  <section class="container third-section">
+  <section class="third-section">
     <div id="blog" class="container">
       <div class="row">
         <div class="col-sm third-section-div">
@@ -711,6 +709,7 @@
 
     </div>
   </section>
+
   <section class="MuiBox-root css-g8crcw" data-testclass="app-promo">
     <div class="MuiBox-root css-18lnyf5">
       <div class="MuiBox-root css-12xf5nm">
@@ -771,19 +770,18 @@
           </div>
           <div class="MuiBox-root css-ndvpl">
             <a class="MuiBox-root css-0" href="https://itunes.apple.com/es/app/mi-pepephone/id508082036" target="_blank"
-              rel="noopener noreferrer" data-testclass="app-store-link"><img
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYyIiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMTYyIDQ4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cmVjdCBzdHJva2U9IiNBNkE2QTYiIHN0cm9rZS13aWR0aD0iMS4yIiBmaWxsPSIjMDAwIiB4PSIuNiIgeT0iLjYiIHdpZHRoPSIxNjAuOCIgaGVpZ2h0PSI0Ni44IiByeD0iNiIvPgogICAgICAgIDxnIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01OC4yMzMgMzEuNTJoLTUuNTVsLTEuMzMzIDMuOTUySDQ5bDUuMjU2LTE0LjYyNWgyLjQ0Mmw1LjI1NyAxNC42MjVoLTIuMzlsLTEuMzMyLTMuOTUzem0tNC45NzUtMS44MjVoNC4zOTlsLTIuMTY5LTYuNDE2aC0uMDZsLTIuMTcgNi40MTZ6TTczLjMwNiAzMC4xNDFjMCAzLjMxNC0xLjc2NSA1LjQ0My00LjQzIDUuNDQzYTMuNTk1IDMuNTk1IDAgMCAxLTMuMzM5LTEuODY2aC0uMDVWMzloLTIuMThWMjQuODFoMi4xMXYxLjc3M2guMDRhMy43NjIgMy43NjIgMCAwIDEgMy4zOC0xLjg4NWMyLjY5NCAwIDQuNDcgMi4xMzkgNC40NyA1LjQ0M3ptLTIuMjM5IDBjMC0yLjE1OC0xLjExLTMuNTc4LTIuODA1LTMuNTc4LTEuNjY1IDAtMi43ODQgMS40NS0yLjc4NCAzLjU3OCAwIDIuMTQ5IDEuMTIgMy41ODggMi43ODQgMy41ODggMS42OTQgMCAyLjgwNS0xLjQxIDIuODA1LTMuNTg4ek04NC45OSAzMC4xNDFjMCAzLjMxNC0xLjc2NiA1LjQ0My00LjQzIDUuNDQzYTMuNTk1IDMuNTk1IDAgMCAxLTMuMzQtMS44NjZoLS4wNVYzOWgtMi4xOFYyNC44MWgyLjExdjEuNzczaC4wNGEzLjc2MiAzLjc2MiAwIDAgMSAzLjM4LTEuODg1YzIuNjkzIDAgNC40NyAyLjEzOSA0LjQ3IDUuNDQzem0tMi4yNCAwYzAtMi4xNTgtMS4xMTEtMy41NzgtMi44MDUtMy41NzgtMS42NjUgMC0yLjc4NSAxLjQ1LTIuNzg1IDMuNTc4IDAgMi4xNDkgMS4xMiAzLjU4OCAyLjc4NSAzLjU4OCAxLjY5NCAwIDIuODA1LTEuNDEgMi44MDUtMy41ODh6TTkyLjcxIDMxLjM5N2MuMTYyIDEuNDUgMS41NjQgMi40MDMgMy40OCAyLjQwMyAxLjgzNyAwIDMuMTU5LS45NTIgMy4xNTktMi4yNiAwLTEuMTM1LS43OTctMS44MTUtMi42ODQtMi4yOGwtMS44ODctLjQ1N2MtMi42NzMtLjY1LTMuOTE0LTEuOTA1LTMuOTE0LTMuOTQzIDAtMi41MjQgMi4xODktNC4yNTcgNS4yOTctNC4yNTcgMy4wNzYgMCA1LjE4NSAxLjczMyA1LjI1NiA0LjI1N2gtMi4xOTljLS4xMzItMS40Ni0xLjMzMy0yLjM0LTMuMDg4LTIuMzQtMS43NTUgMC0yLjk1Ni44OS0yLjk1NiAyLjE4OCAwIDEuMDM0Ljc2NyAxLjY0MiAyLjY0NCAyLjEwOGwxLjYwNC4zOTZjMi45ODcuNzEgNC4yMjggMS45MTUgNC4yMjggNC4wNTQgMCAyLjczNi0yLjE3IDQuNDUtNS42MiA0LjQ1LTMuMjMgMC01LjQxLTEuNjczLTUuNTUtNC4zMTloMi4yM3pNMTA2LjM1MiAyMi4yODZ2Mi41MjNoMi4wMTh2MS43MzNoLTIuMDE4djUuODc5YzAgLjkxMy40MDQgMS4zMzkgMS4yOTEgMS4zMzkuMjQtLjAwNC40OC0uMDIxLjcxNy0uMDV2MS43MjJhNS45NTcgNS45NTcgMCAwIDEtMS4yMS4xMDFjLTIuMTUgMC0yLjk4Ny0uODEtMi45ODctMi44Nzl2LTYuMTEyaC0xLjU0M1YyNC44MWgxLjU0M3YtMi41MjNoMi4xODl6TTEwOS41NCAzMC4xNDFjMC0zLjM1NSAxLjk2Ni01LjQ2MyA1LjAzNC01LjQ2MyAzLjA3NyAwIDUuMDM1IDIuMTA4IDUuMDM1IDUuNDYzIDAgMy4zNjUtMS45NDggNS40NjQtNS4wMzUgNS40NjRzLTUuMDM1LTIuMS01LjAzNS01LjQ2NHptNy44NDkgMGMwLTIuMzAxLTEuMDUtMy42Ni0yLjgxNS0zLjY2LTEuNzY2IDAtMi44MTUgMS4zNy0yLjgxNSAzLjY2IDAgMi4zMTEgMS4wNSAzLjY2IDIuODE1IDMuNjZzMi44MTUtMS4zNDkgMi44MTUtMy42NnpNMTIxLjQwNSAyNC44MWgyLjA3OHYxLjgxNGguMDVhMi41MzMgMi41MzMgMCAwIDEgMi41NTQtMS45MjZjLjI1LS4wMDEuNTAxLjAyNi43NDYuMDgxdjIuMDQ4YTMuMDMzIDMuMDMzIDAgMCAwLS45NzktLjEzMyAyLjE5IDIuMTkgMCAwIDAtMS42OTcuNzAyIDIuMjEyIDIuMjEyIDAgMCAwLS41NzMgMS43NTJ2Ni4zMjRoLTIuMTc5VjI0Ljgxek0xMzYuODc5IDMyLjM0Yy0uMjkzIDEuOTM2LTIuMTcgMy4yNjUtNC41NyAzLjI2NS0zLjA4OSAwLTUuMDA1LTIuMDc5LTUuMDA1LTUuNDEzIDAtMy4zNDUgMS45MjctNS41MTQgNC45MTMtNS41MTQgMi45MzYgMCA0Ljc4MyAyLjAyNyA0Ljc4MyA1LjI2di43NWgtNy40OTd2LjEzMmMtLjA3Ljc5NC4yMDMgMS41OC43NSAyLjE1OGEyLjc1OCAyLjc1OCAwIDAgMCAyLjEwNi44NjIgMi40IDIuNCAwIDAgMCAyLjQ1LTEuNWgyLjA3em0tNy4zNjYtMy4xODJoNS4zMDdhMi41NzEgMi41NzEgMCAwIDAtLjcxMy0xLjkyNSAyLjU0NyAyLjU0NyAwIDAgMC0xLjg5LS43ODEgMi42OCAyLjY4IDAgMCAwLTEuOTEzLjc4NyAyLjcwNiAyLjcwNiAwIDAgMC0uNzkgMS45MTl6Ii8+CiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTUwLjE3MyAxMy4zNTRjMC0yLjI4IDEuMjA3LTMuNjg3IDMuMTUtMy42ODdhMi43OTkgMi43OTkgMCAwIDEgMi45MSAyLjQzNmgtMS4wODJhMS44MDEgMS44MDEgMCAwIDAtMS44MjctMS40MThjLTEuMjU2IDAtMi4wNDIgMS4wMjgtMi4wNDIgMi42NjkgMCAxLjYzNy43ODYgMi42NjQgMi4wNDYgMi42NjRhMS43NTQgMS43NTQgMCAwIDAgMS44MjMtMS4yOTVoMS4wODJhMi43MzIgMi43MzIgMCAwIDEtMi45MDUgMi4zMTNjLTEuOTQ0IDAtMy4xNTUtMS40MDgtMy4xNTUtMy42ODJ6TTU3LjQyMSAxNC4yMTFjLS4wOS0uOTUuMzY0LTEuODcgMS4xNzEtMi4zNzRhMi40OTEgMi40OTEgMCAwIDEgMi42MzggMCAyLjUxNiAyLjUxNiAwIDAgMSAxLjE3IDIuMzc0IDIuNTE3IDIuNTE3IDAgMCAxLTEuMTY5IDIuMzc4IDIuNDkyIDIuNDkyIDAgMCAxLTIuNjQgMCAyLjUxNyAyLjUxNyAwIDAgMS0xLjE3LTIuMzc4em0zLjkwOCAwYzAtMS4xNS0uNTE0LTEuODIxLTEuNDE2LTEuODIxLS45MDYgMC0xLjQxNS42NzItMS40MTUgMS44MjEgMCAxLjE2LjUxIDEuODI2IDEuNDE1IDEuODI2LjkwMiAwIDEuNDE2LS42NzEgMS40MTYtMS44MjZ6TTYzLjc5OSAxMS41NjJINjQuOHYuODQzaC4wNzhjLjI3MS0uNjIuOTA0LTEgMS41NzYtLjk0NS41Mi0uMDQgMS4wMy4xNiAxLjM4NS41NDUuMzU2LjM4My41MTguOTA5LjQ0MiAxLjQyN3YzLjQzM0g2Ny4yNHYtMy4xN2MwLS44NTItLjM2OS0xLjI3Ni0xLjE0LTEuMjc2YTEuMjA4IDEuMjA4IDAgMCAwLS45MzcuMzggMS4yMiAxLjIyIDAgMCAwLS4zMjMuOTY0djMuMTAySDYzLjh2LTUuMzAzek03MS44MjMgMTEuNDZjMS4xODcgMCAxLjk2NC41NTUgMi4wNjYgMS40OWgtMWMtLjA5Ni0uMzktLjQ3NS0uNjM4LTEuMDY2LS42MzgtLjU4MSAwLTEuMDIzLjI3Ny0xLjAyMy42OTEgMCAuMzE3LjI2Ni41MTcuODM5LjY0OGwuODc3LjIwNGMxLjAwNC4yMzUgMS40NzQuNjY4IDEuNDc0IDEuNDQ3IDAgLjk5OS0uOTI2IDEuNjY2LTIuMTg2IDEuNjY2LTEuMjU2IDAtMi4wNzUtLjU3LTIuMTY4LTEuNTFoMS4wNDNjLjE4NS40Ni42Ni43MzQgMS4xNDkuNjYyLjY0OSAwIDEuMTEtLjI5MiAxLjExLS43MTYgMC0uMzE2LS4yNDctLjUyLS43NzYtLjY0N2wtLjkyLS4yMTVjLTEuMDA0LS4yMzktMS40Ny0uNjkxLTEuNDctMS40OCAwLS45NC44NTgtMS42MDIgMi4wNTEtMS42MDJ6TTc1LjMwNiAxMC42NzUgNzYuNTIzIDloMS4yMjJsLTEuMzYzIDEuNjc1aC0xLjA3NnptLjEwOC44ODdoMS4wMzd2NS4zMDNoLTEuMDM3di01LjMwM3pNNzguMDczIDE3LjM5NmgxLjA2NmMuMDg4LjM4NS41My42MzMgMS4yMzIuNjMzLjg2OCAwIDEuMzgyLS40MTQgMS4zODItMS4xMTV2LTEuMDE4aC0uMDc4YTEuNzczIDEuNzczIDAgMCAxLTEuNjMuODkxYy0xLjM0NyAwLTIuMTgtMS4wNDYtMi4xOC0yLjYzNCAwLTEuNjE3Ljg0My0yLjY3OSAyLjE5MS0yLjY3OWExLjgyOCAxLjgyOCAwIDAgMSAxLjY1OC45MzVoLjA4MnYtLjg0N2guOTk5djUuMzQ3YzAgMS4yMTMtLjk0NiAxLjk4Mi0yLjQzOSAxLjk4Mi0xLjMxOSAwLTIuMTcyLS41OTQtMi4yODMtMS40OTV6bTMuNy0zLjI0OGMwLTEuMDU3LS41NDQtMS43MzQtMS40MzItMS43MzQtLjg5NiAwLTEuNC42NzctMS40IDEuNzM0cy41MDQgMS43MzQgMS40IDEuNzM0Yy44OTMgMCAxLjQzMS0uNjcyIDEuNDMxLTEuNzM0ek04OC45MDYgMTYuODY1aC0xLjAwNHYtLjg0MmgtLjA4M2ExLjU4MiAxLjU4MiAwIDAgMS0xLjU5NS45NDUgMS43MSAxLjcxIDAgMCAxLTEuMzc2LS41NDUgMS43MjggMS43MjggMCAwIDEtLjQ0Mi0xLjQxOHYtMy40NDNoMS4wNDN2My4xN2MwIC44NTcuMzQ0IDEuMjY3IDEuMTEgMS4yNjcuMzYuMDM0LjcxNS0uMDk2Ljk2OC0uMzU1LjI1My0uMjYuMzc3LS42Mi4zMzYtLjk4di0zLjEwMmgxLjA0M3Y1LjMwM3pNOTUuMDMgMTUuNDM0YTIuMTQzIDIuMTQzIDAgMCAxLTIuMjg4IDEuNTM0IDIuMzkzIDIuMzkzIDAgMCAxLTEuODUtLjgwMiAyLjQxNiAyLjQxNiAwIDAgMS0uNTg4LTEuOTM2IDIuNDU0IDIuNDU0IDAgMCAxIC41ODctMS45NDMgMi40MyAyLjQzIDAgMCAxIDEuODQ3LS44MjdjMS40NjkgMCAyLjM1NSAxLjAwOCAyLjM1NSAyLjY3M3YuMzY1aC0zLjcyOHYuMDZjLS4wMzMuMzkzLjEuNzgyLjM2OSAxLjA3MS4yNjcuMjkuNjQ0LjQ1MiAxLjAzNy40NDdhMS4yNjQgMS4yNjQgMCAwIDAgMS4yNTYtLjY0M2gxLjAwM3ptLTMuNjY1LTEuNzFoMi42NjdjLjAyNi0uMzYtLjEtLjcxNC0uMzQ3LS45NzZhMS4yNyAxLjI3IDAgMCAwLS45NTMtLjM5OCAxLjM0NyAxLjM0NyAwIDAgMC0uOTcyLjM5OGMtLjI1Ny4yNTgtLjQuNjEtLjM5NS45NzZ6TTk2LjU0IDkuNDkyaDEuMDQydjcuMzczSDk2LjU0ek05OS4wMyAxNC4yMTFjLS4wOS0uOTUuMzYzLTEuODcgMS4xNzEtMi4zNzRhMi40OTEgMi40OTEgMCAwIDEgMi42MzggMCAyLjUxNiAyLjUxNiAwIDAgMSAxLjE3IDIuMzc0IDIuNTE3IDIuNTE3IDAgMCAxLTEuMTcgMi4zNzggMi40OTIgMi40OTIgMCAwIDEtMi42NCAwIDIuNTE3IDIuNTE3IDAgMCAxLTEuMTY5LTIuMzc4em0zLjkwOCAwYzAtMS4xNS0uNTE0LTEuODIxLTEuNDE2LTEuODIxLS45MDYgMC0xLjQxNi42NzItMS40MTYgMS44MjEgMCAxLjE2LjUxIDEuODI2IDEuNDE2IDEuODI2LjkwMiAwIDEuNDE2LS42NzEgMS40MTYtMS44MjZ6TTExMi43MzYgMTUuNDM0YTIuMTQzIDIuMTQzIDAgMCAxLTIuMjg4IDEuNTM0IDIuMzkzIDIuMzkzIDAgMCAxLTEuODUtLjgwMiAyLjQxNiAyLjQxNiAwIDAgMS0uNTg4LTEuOTM2IDIuNDU0IDIuNDU0IDAgMCAxIC41ODctMS45NDMgMi40MyAyLjQzIDAgMCAxIDEuODQ3LS44MjdjMS40NjkgMCAyLjM1NSAxLjAwOCAyLjM1NSAyLjY3M3YuMzY1aC0zLjcyOHYuMDZjLS4wMzMuMzkzLjEuNzgyLjM2OSAxLjA3MS4yNjcuMjkuNjQ0LjQ1MiAxLjAzNy40NDdhMS4yNjQgMS4yNjQgMCAwIDAgMS4yNTYtLjY0M2gxLjAwM3ptLTMuNjY1LTEuNzFoMi42NjdjLjAyNi0uMzYtLjEtLjcxNC0uMzQ3LS45NzZhMS4yNyAxLjI3IDAgMCAwLS45NTMtLjM5OCAxLjM0NyAxLjM0NyAwIDAgMC0uOTcyLjM5OGMtLjI1Ny4yNTgtLjQuNjEtLjM5NS45NzZ6TTExNC4xOTggMTEuNTYyaDEuMDAzdi44NDNoLjA3OGMuMjctLjYyLjkwMy0xIDEuNTc1LS45NDUuNTItLjA0IDEuMDMuMTYgMS4zODYuNTQ1LjM1NS4zODMuNTE4LjkwOS40NDEgMS40Mjd2My40MzNoLTEuMDQxdi0zLjE3YzAtLjg1Mi0uMzctMS4yNzYtMS4xNC0xLjI3NmExLjIwOCAxLjIwOCAwIDAgMC0uOTM3LjM4IDEuMjIgMS4yMiAwIDAgMC0uMzIzLjk2NHYzLjEwMmgtMS4wNDJ2LTUuMzAzek0xMjcuNjIgMTUuNDM0YTIuMTQzIDIuMTQzIDAgMCAxLTIuMjg3IDEuNTM0IDIuMzkzIDIuMzkzIDAgMCAxLTEuODUtLjgwMiAyLjQxNiAyLjQxNiAwIDAgMS0uNTg4LTEuOTM2IDIuNDU0IDIuNDU0IDAgMCAxIC41ODctMS45NDMgMi40MyAyLjQzIDAgMCAxIDEuODQ3LS44MjdjMS40NjkgMCAyLjM1NSAxLjAwOCAyLjM1NSAyLjY3M3YuMzY1aC0zLjcyOHYuMDZjLS4wMzMuMzkzLjEuNzgyLjM2OSAxLjA3MS4yNjcuMjkuNjQ0LjQ1MiAxLjAzNy40NDdhMS4yNjQgMS4yNjQgMCAwIDAgMS4yNTYtLjY0M2gxLjAwM3ptLTMuNjY0LTEuNzFoMi42NjdjLjAyNi0uMzYtLjEtLjcxNC0uMzQ3LS45NzZhMS4yNyAxLjI3IDAgMCAwLS45NTMtLjM5OCAxLjM0NyAxLjM0NyAwIDAgMC0uOTcyLjM5OGMtLjI1Ny4yNTktLjQuNjEtLjM5NS45NzZ6TTEyOS4xMzEgOS40OTJoMS4wNDJ2Ny4zNzNoLTEuMDQyeiIvPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgICAgIDxwYXRoIGQ9Im0yOS43OTEgMTYuNzU3LjI5Ny4wMmE2LjU5MyA2LjU5MyAwIDAgMSA1LjE4MiAyLjc3NSA2LjM1MSA2LjM1MSAwIDAgMC0zLjA2IDUuMzM4QTYuMTQ4IDYuMTQ4IDAgMCAwIDM2IDMwLjU0N2ExNC4wNCAxNC4wNCAwIDAgMS0xLjk3MSAzLjk3NmMtMS4xNjEgMS43Mi0yLjM3OSAzLjQwMS00LjMxMSAzLjQzMi0xLjg3OC4wNDMtMi41MDgtMS4wOTQtNC42NjItMS4wOTQtMi4xNzQgMC0yLjg0NiAxLjA2My00LjY0NyAxLjEzNy0xLjg0LjA2OC0zLjI0Ni0xLjgzNi00LjQ1LTMuNTQtMi40MDUtMy40OC00LjI3Ny05LjgwOC0xLjc2Ny0xNC4xMTNBNi45MSA2LjkxIDAgMCAxIDIwIDE2LjgzN2MxLjg0Mi0uMDM3IDMuNTUyIDEuMjMyIDQuNjg1IDEuMjMyIDEuMTEgMCAzLjIyNC0xLjUxOCA1LjQwNC0xLjI5MnptLjMyLTYuNzU3YTYuMjI2IDYuMjI2IDAgMCAxLTEuNDQ3IDQuNDg4IDUuMzQyIDUuMzQyIDAgMCAxLTQuMjAyIDEuOTY4IDUuOTI2IDUuOTI2IDAgMCAxIDEuNDg1LTQuMzIyQTYuNDU2IDYuNDU2IDAgMCAxIDMwLjExIDEweiIgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJub256ZXJvIi8+CiAgICA8L2c+Cjwvc3ZnPgo="
-                width="162" height="48" alt="Link al Apple store para instalar la app de Pepephone"></a>
+              rel="noopener noreferrer" data-testclass="app-store-link">
+              <img src="assets/img/appstore.svg" alt="">
+            </a>
             <a class="MuiBox-root css-0"
               href="https://play.google.com/store/apps/details?id=com.spanishcoders.pepephone&amp;hl=es" target="_blank"
               rel="noopener noreferrer" data-testclass="play-store-link">
-              <img
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYyIiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMTYyIDQ4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IHgxPSI1MCUiIHkxPSIyNi4zNzIlIiB4Mj0iMzcuNjEzJSIgeTI9IjY1LjA0NSUiIGlkPSJhIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzAwQzJGRiIgb2Zmc2V0PSIwJSIvPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMDNFM0ZGIiBvZmZzZXQ9IjEwMCUiLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICAgIDxsaW5lYXJHcmFkaWVudCB4MT0iMCUiIHkxPSI1MCUiIHgyPSIxMDAlIiB5Mj0iNTAlIiBpZD0iYiI+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNGQjAiIG9mZnNldD0iMCUiLz4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI0ZEMCIgb2Zmc2V0PSIxMDAlIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9Ijg2LjI0MyUiIHkxPSIyOS41MDklIiB4Mj0iOS44MDglIiB5Mj0iODEuODYyJSIgaWQ9ImMiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjRkYzQjQ0IiBvZmZzZXQ9IjAlIi8+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNERjI1NTQiIG9mZnNldD0iMTAwJSIvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IHgxPSI4Ljg4NiUiIHkxPSIxOC4xMzIlIiB4Mj0iODUuNzM4JSIgeTI9IjY4Ljg0OCUiIGlkPSJkIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzExRDU3NCIgb2Zmc2V0PSIwJSIvPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMDBGMDc2IiBvZmZzZXQ9IjEwMCUiLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cmVjdCBzdHJva2U9IiNBNkE2QTYiIHN0cm9rZS13aWR0aD0iMS4yIiBmaWxsPSIjMDAwIiB4PSIuNiIgeT0iLjYiIHdpZHRoPSIxNjAuOCIgaGVpZ2h0PSI0Ni44IiByeD0iNiIvPgogICAgICAgIDxwYXRoIGQ9Ik05MS43MjcgMjYuNTZjMS4xOTcgMCAyLjE0Ny41MjggMi42NCAxLjExM2guMDc2di0uODEyaDIuMDkydjguOTQ4YzAgMy42OC0yLjE4NiA1LjE5MS00Ljc3IDUuMTkxLTIuNDMzIDAtMy44OTctMS42MjMtNC40NDgtMi45NDVsMS45Mi0uNzkzYy4zNDIuODEyIDEuMTc4IDEuNzc1IDIuNTI3IDEuNzc1IDEuNjU0IDAgMi42OC0xLjAyIDIuNjgtMi45Mjd2LS43MTdoLS4wNzZjLS40OTQuNjA1LTEuNDQ0IDEuMTMzLTIuNjQxIDEuMTMzLTIuNTEgMC00LjgwOC0yLjE3LTQuODA4LTQuOTY0IDAtMi44MTQgMi4yOTktNS4wMDIgNC44MDgtNS4wMDJ6bTQ5LjYwOC4yOTMgMi42MTkgNi4zNWguMDc1bDIuNTIzLTYuMzVIMTQ5bC02LjA1MSAxMy44MTNoLTIuMjk3bDIuMjM5LTQuOTM4LTMuOTI3LTguODc1aDIuMzcxem0tMzUuMjgtLjI5M2MyLjYwMyAwIDMuODc3IDIuMDU3IDQuMjk1IDMuMTdsLjIyOC41NjctNi43MDkgMi43NTZjLjUxMyAxIDEuMzEyIDEuNTEgMi40MzMgMS41MSAxLjEyMSAwIDEuOTAxLS41NDggMi40Ny0xLjM3OGwxLjcxMSAxLjEzM2MtLjU1LjgxMi0xLjg4MSAyLjIwOC00LjE4MSAyLjIwOC0yLjg1IDAtNC45NzgtMi4xOS00Ljk3OC00Ljk4MyAwLTIuOTY1IDIuMTQ3LTQuOTgzIDQuNzMxLTQuOTgzem0tNDkuMTUtNS41MTNjMi4zNzYgMCA0LjA2Ny45MjUgNS4zNCAyLjEzM2wtMS41MDEgMS40OTJjLS45MTItLjg1LTIuMTQ3LTEuNTEtMy44MzgtMS41MS0zLjEzNiAwLTUuNTg4IDIuNTEtNS41ODggNS42MjVzMi40NTIgNS42MjQgNS41ODggNS42MjRjMi4wMzIgMCAzLjE5MS0uODEgMy45MzMtMS41NDYuNjA4LS42MDUgMS4wMDctMS40NzMgMS4xNTktMi42NjNoLTUuMDkyVjI4LjA5aDcuMTYzYy4wNzcuMzc3LjExNS44My4xMTUgMS4zMiAwIDEuNTg3LS40MzggMy41NS0xLjg0NCA0Ljk0Ni0xLjM2OCAxLjQxNy0zLjExNyAyLjE3MS01LjQzNCAyLjE3MS00LjI5NSAwLTcuOTA2LTMuNDczLTcuOTA2LTcuNzM5czMuNjEtNy43NCA3LjkwNi03Ljc0em0xMy4wNyA1LjUxM2MyLjc3MyAwIDUuMDM1IDIuMDk1IDUuMDM1IDQuOTgzIDAgMi44NjgtMi4yNjIgNC45ODMtNS4wMzYgNC45ODMtMi43NzUgMC01LjAzNy0yLjExNS01LjAzNy00Ljk4MyAwLTIuODg4IDIuMjYyLTQuOTgzIDUuMDM3LTQuOTgzem0xMC45ODUgMGMyLjc3NCAwIDUuMDM1IDIuMDk1IDUuMDM1IDQuOTgzIDAgMi44NjgtMi4yNjEgNC45ODMtNS4wMzUgNC45ODMtMi43NzUgMC01LjAzNi0yLjExNS01LjAzNi00Ljk4MyAwLTIuODg4IDIuMjYxLTQuOTgzIDUuMDM2LTQuOTgzem01My4zNzUtLjAyN2MyLjUyNCAwIDQuNDc3IDEuNDUgNC40NzcgNC4wNTFWMzYuMmgtMi4xMjR2LTEuMTNoLS4wNzZjLS41MTMuNzczLTEuMzI4IDEuNDMzLTIuODA5IDEuNDMzLTEuOTM0IDAtMy42Ni0xLjI2My0zLjY2LTMuMjI0IDAtMi4xNDcgMi4xNDQtMy4yOTcgNC4yNS0zLjI5NyAxLjA0MyAwIDEuODk2LjMzOSAyLjI5NS41NjV2LS4xNWMtLjAyLTEuMjA3LTEuMTc2LTEuODg1LTIuMzE1LTEuODg1LS44MTYgMC0xLjU5My4yNjQtMi4wMTEgMS4wNzRsLTEuOTUzLS44MWMuNjgzLTEuNTQ1IDIuMzMzLTIuMjQyIDMuOTI2LTIuMjQyem0tMzQuMDc1LTQuOTU4djE0LjY0OWgtMi4yMDVWMjEuNTc1aDIuMjA1em0yMC40MTYuMDAxYzIuNDQgMCA0LjgzNyAxLjc1NCA0LjgzNyA0LjU0OSAwIDIuNzk0LTIuMzk4IDQuNTUtNC44MzcgNC41NWgtMy4wNzR2NS41NDloLTIuMlYyMS41NzZ6bTguMjUyIDB2MTQuNjQ4aC0yLjJWMjEuNTc2aDIuMnptLTU4Ljk1NCA2Ljk0NmMtMS41MiAwLTIuODMyIDEuMjI3LTIuODMyIDMuMDIxIDAgMS43NzQgMS4zMTIgMy4wMiAyLjgzMiAzLjAyIDEuNTIgMCAyLjgzMS0xLjI0NiAyLjgzMS0zLjAyIDAtMS43OTQtMS4zMTItMy4wMi0yLjgzLTMuMDJ6bTEwLjk4NiAwYy0xLjUyMSAwLTIuODMzIDEuMjI3LTIuODMzIDMuMDIxIDAgMS43NzQgMS4zMTIgMy4wMiAyLjgzMyAzLjAyIDEuNTIgMCAyLjgzLTEuMjQ2IDIuODMtMy4wMiAwLTEuNzk0LTEuMzEtMy4wMi0yLjgzLTMuMDJ6bTEwLjk1NyAwYy0xLjUyIDAtMi43OTQgMS4yODQtMi43OTQgMy4wNCAwIDEuNzM2IDEuMjczIDMgMi43OTQgMyAxLjUwMSAwIDIuNjc4LTEuMjY0IDIuNjc4LTMgMC0xLjc1Ni0xLjE3Ny0zLjA0LTIuNjc4LTMuMDR6bTQyLjc2IDMuMjNjLTEuMDgxIDAtMi4zMzQuNDM0LTIuMzM0IDEuNTY1IDAgLjg4NiAxLjAwNSAxLjI0MyAxLjcyNyAxLjI0MyAxLjI3IDAgMi40NDctLjk2IDIuNjE4LTIuMzE4LS41OS0uMjgyLTEuMDQzLS40OS0yLjAxMi0uNDl6bS0yOC41NDYtMy4yNjdjLTEuMTIxIDAtMi42OC45ODItMi42MjMgMi45MDdsNC40ODUtMS44NWMtLjI0Ni0uNjI0LS45ODctMS4wNTctMS44NjItMS4wNTd6bTE0LjYwMi00Ljg3aC0zLjEzMXY1LjAyaDMuMTNjMS42NDYgMCAyLjU4LTEuMzc1IDIuNTgtMi41MSAwLTEuMTU3LS45MzQtMi41MS0yLjU4LTIuNTF6TTczLjQ2OCA5YzEuMDU2LS4wMDEgMS45NTcuMzcgMi42NzUgMS4xMDYuNzE5LjczMiAxLjA4MiAxLjYzNiAxLjA4IDIuNjgzLjAwMiAxLjA1NC0uMzYgMS45Ni0xLjA3NSAyLjY4OGwtLjE2OS4xNjNjLS42ODcuNjI1LTEuNTMxLjk0LTIuNTExLjkzOS0xLjA2MiAwLTEuOTY0LS4zNjgtMi42NzktMS4xMDJsLS4xNTktLjE3MWMtLjYxLS42OTgtLjkxOC0xLjU0NC0uOTE3LTIuNTE3IDAtMS4wNTMuMzYtMS45NTggMS4wNzYtMi42ODhDNzEuNTA0IDkuMzcgNzIuNDA2IDkgNzMuNDY4IDl6TTYwLjc4NiA5Yy42Mi0uMDAxIDEuMTM3LjE1NSAxLjUzNy40NzIuMzg4LjMwOC42NS42NTMuNzcgMS4wMzRsLjAzMi4xMDItLjA5OS4wNC0uOTU0LjM5Ni0uMDM0LS4xM2MtLjA1Mi0uMTkzLS4xOC0uMzc4LS40MDEtLjU1N2wtLjExLS4wNzhjLS4xOTItLjExOS0uNDI5LS4xOC0uNzItLjE4LS4zMjkgMC0uNTk2LjA4OC0uODIyLjI2NC0uMjI0LjE3OC0uMzI0LjM3Ni0uMzI2LjYyOS4wMDIuMjI3LjA5My40MDcuMjk3LjU3Mi4yMTEuMTY2LjUzMy4zMjYuOTY2LjQ2Ni4zNTIuMTEzLjY0Ni4yMi44ODguMzI4LjI0Mi4xMS40ODYuMjUyLjczMi40My4yNTQuMTg0LjQ1LjQxNy41OC42OTMuMTMuMjc2LjE5NS41OTQuMTk1Ljk0OCAwIC4zNTctLjA3NS42ODItLjIyNi45NjctLjE1LjI4NS0uMzUyLjUxNC0uNjAzLjY4MWEyLjk1NCAyLjk1NCAwIDAgMS0xLjY1My41MDJsLS4yMDEtLjAwOWMtLjQ3LS4wMzgtLjkyOS0uMjExLTEuMzcyLS41MTFhMi40NDMgMi40NDMgMCAwIDEtMS4wMTItMS40NzVsLS4wMjUtLjA5OC4wOTYtLjAzNy45NTUtLjM4NS4wMzQuMTNjLjA5NC4zNjUuMjgxLjY2Ny41Ny45MTguMjkuMjQ4LjYwMi4zNjguOTU2LjM2OS4zNzUtLjAwMS42ODUtLjA5Ny45NDQtLjI4NmEuODcuODcgMCAwIDAgLjM3MS0uNzQ2Yy0uMDAyLS4zNjYtLjEyMy0uNjIzLS4zNzMtLjgxNS0uMjYtLjE5OS0uNjkzLS4zOTUtMS4yOTItLjU3Ni0uNjM5LS4yLTEuMTMtLjQ2LTEuNDcxLS43ODktLjM0Ni0uMzMxLS41MjMtLjc2Ni0uNTIyLTEuMjc3IDAtLjUzNi4yMi0xLjAxMS42NDItMS40LjQyNS0uMzk2Ljk4NC0uNTkzIDEuNjUxLS41OTJ6bTI5Ljc2My4xNTdhMi4yMDYgMi4yMDYgMCAwIDEgMS41MTcuNTc0bC0uMDAyLS4wMDFjLjQzMi4zODQuNjUxLjg4MS42NSAxLjQ1OSAwIC4zNTQtLjA5NC42NzUtLjI4My45NDlhMS43MTkgMS43MTkgMCAwIDEtLjQ1Ny40NTlsLS4xMDEuMDYyLjE1LjA3NmMuMTY0LjA5My4zMTIuMjEuNDQzLjM0OGwuMTI0LjE0NmMuMjQuMzA3LjM2Mi42Ny4zNjEgMS4wNzNhMS45NTkgMS45NTkgMCAwIDEtLjY3NyAxLjUyYy0uNDQ1LjM5OC0uOTguNi0xLjU4Ni42aC0yLjgxNlY5LjE1N3ptMjMuMjg1IDAgMy4yODQgNS4yMjEtLjAyOC0uOTg4VjkuMTU3aDEuMTQ3djcuMjY1aC0xLjEzM2wtMy40NDQtNS40ODYuMDI4Ljk4N3Y0LjQ5OWgtMS4xNDRWOS4xNTdoMS4yOXptLTM0LjI4IDAgMy4yODUgNS4yMjMtLjAyOC0uOTlWOS4xNTZoMS4xNDZ2Ny4yNjVoLTEuMTMzbC0zLjQ0NC01LjQ4OS4wMy45OXY0LjQ5OWgtMS4xNDZWOS4xNTdoMS4yOXptLTIyLjIxNyAwdjcuMjY1aC0xLjE0NVY5LjE1N2gxLjE0NXptNTQuMDIgMHYxLjA5OGgtMy4yMjR2MS45OTVoMi45MDd2MS4wNzhoLTIuOTA3djEuOTk2aDMuMjI0djEuMDk4aC00LjM2OFY5LjE1N2g0LjM2OHptLTI0Ljg3IDB2Ny4yNjVoLTEuMTQ1VjkuMTU3aDEuMTQ1em0tMzUuMDQyIDBjMS4xMTEtLjAwMSAyLjAxOS4zMzUgMi42OTQgMS4wMTIuNjc2LjY3MyAxLjAxNCAxLjU1NSAxLjAxMyAyLjYyIDAgMS4wNjQtLjMzNyAxLjk0OC0xLjAxMyAyLjYyMi0uNjc1LjY3Ni0xLjU4MyAxLjAxMi0yLjY5NCAxLjAxaC0yLjI4MlY5LjE1OHptNDMuNjQxIDB2Ni4xNjdoMy4wNjR2MS4wOThoLTQuMjFWOS4xNTdoMS4xNDZ6bTguMzQzIDB2MS4wOThoLTMuMjIzdjEuOTk1aDIuOTA2djEuMDc4aC0yLjkwNnYxLjk5NmgzLjIyM3YxLjA5OGgtNC4zNjhWOS4xNTdoNC4zNjh6bS0zNi41MTQgMGMuNjI2LS4wMDEgMS4xOC4yMSAxLjYzNy42MjUuNDYyLjQxNC42OTguOTUzLjY5NSAxLjU4NGEyLjA0MiAyLjA0MiAwIDAgMS0uNjk1IDEuNTgzIDIuMzU4IDIuMzU4IDAgMCAxLTEuNjM3LjYyNWgtMS4zODR2Mi44NDhoLTEuMTQ1VjkuMTU3em02LjU1My45NDJjLS43My4wMDEtMS4zMzQuMjQ5LTEuODM5Ljc1NS0uNS41MDUtLjc1IDEuMTQyLS43NTEgMS45MzUgMCAuNzk0LjI1IDEuNDMxLjc1MiAxLjkzNmwuMTU0LjE0NGMuNDIuMzY0LjkwNS41NjMgMS40NjkuNjA0bC4yMTUuMDA4Yy43My0uMDAxIDEuMzM1LS4yNSAxLjgzOS0uNzU2LjUwMS0uNTA2Ljc1MS0xLjE0Mi43NTMtMS45MzYtLjAwMi0uNzkzLS4yNTItMS40My0uNzUzLTEuOTM1LS41MDQtLjUwNi0xLjEwOS0uNzU0LTEuODM5LS43NTV6bS0yMi4wMjMuMTU2aC0xLjEzN3Y1LjA2OGgxLjEzN2MuNzE2IDAgMS4yODItLjE4IDEuNzItLjUzOGwuMTQtLjEyNmMuNDUxLS40MzkuNjgtMS4wNTMuNjgxLTEuODctLjAwMS0uODEtLjIzLTEuNDIyLS42OC0xLjg2NS0uNDU1LS40NDMtMS4wNjYtLjY2OC0xLjg2LS42N3ptMzkuMjQzIDIuOTk1aC0xLjY3MnYyLjA3M2gxLjcxMmMuMjc2LS4wMDEuNDk0LS4wNzguNjc0LS4yMzdsLjA4OC0uMDg3Yy4yMDEtLjIyNS4yOTUtLjQ1OS4yOTYtLjcxOC0uMDAxLS4yNTctLjA5Ny0uNDg2LS4zMDUtLjcxLS4yMDMtLjIxMy0uNDU2LS4zMi0uNzkzLS4zMjF6bS0yMy43NTItMi45OTVINjUuNTNsLS4wMDEgMi4yMmgxLjQwNmMuMzA1IDAgLjU0NC0uMDgzLjczOC0uMjUybC4wOTMtLjA5Yy4yMTUtLjI0LjMxNS0uNDkuMzE1LS43NjcgMC0uMjc4LS4xLS41MjgtLjMxNS0uNzY3LS4yMS0uMjMtLjQ3NS0uMzQyLS44MzEtLjM0NHptMjMuNjU0IDBoLTEuNTc0djEuOTE1aDEuNTMzYy4yNzIgMCAuNDg0LS4wNzIuNjU2LS4yMmwuMDgzLS4wOGMuMTkxLS4yMDkuMjgtLjQyMy4yOC0uNjYxYS45Ni45NiAwIDAgMC0uMjcyLS42NTljLS4xOC0uMTk3LS40MDMtLjI5My0uNzA2LS4yOTV6IiBmaWxsPSIjRkZGIi8+CiAgICAgICAgPHBhdGggZD0iTS41MjEuNDY0Qy4xOTQuODIyIDAgMS4zOCAwIDIuMTAzdjI1Ljc5NmMwIC43MjIuMTk0IDEuMjc4LjUyMSAxLjYzN2wuMDgzLjA4NSAxMy45NS0xNC40NVYxNC44M0wuNjA1LjM4LjUyLjQ2NHoiIGZpbGw9InVybCgjYSkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzIDkpIi8+CiAgICAgICAgPHBhdGggZD0iTTE0LjU1NSAxNC44M3YuMzQxbDQuNjQ5IDQuODE4LjEwNy0uMDYxIDUuNTA4LTMuMjQzYzEuNTc1LS45MjYgMS41NzUtMi40NDIgMC0zLjM2OGwtNS41MDgtMy4yNDMtLjEwNi0uMDYyLTQuNjUgNC44MTd6IiBmaWxsPSJ1cmwoI2IpIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMyA5KSIvPgogICAgICAgIDxwYXRoIGQ9Ik0uNTIxIDI5LjUzNmMuNTE4LjU3IDEuMzc1LjY0IDIuMzQuMDcybDE2LjQ1LTkuNjhMMTQuNTU1IDE1IC41MiAyOS41MzZ6IiBmaWxsPSJ1cmwoI2MpIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMyA5KSIvPgogICAgICAgIDxwYXRoIGQ9Im0uNTIxLjQ2NCAxNC4wMzQgMTQuNTM3IDQuNzU2LTQuOTI4TDIuODYxLjM5MkMyLjQxLjEyNiAxLjk4IDAgMS42IDAgMS4xNjggMCAuNzk2LjE2Mi41Mi40NjQiIGZpbGw9InVybCgjZCkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzIDkpIi8+CiAgICA8L2c+Cjwvc3ZnPgo="
-                width="162" height="48" alt="Link a Google play store para instalar la app de Pepephone"></a>
+              <img src="assets/img/googleplay.svg" alt="">
+            </a>
           </div>
         </div>
       </div>
-      <img style="margin-left: 240px;" src="assets/img/phone.svg" alt="">
+      <img class="phone-img" style="margin-left: 240px;" src="assets/img/phone.svg" alt="">
     </div>
     <div class="loadImage MuiBox-root css-15icfvc">
 
@@ -792,7 +790,7 @@
   </section>
 
   <footer class=" pt-5 pb-4 footer">
-    <div class="container text-md-left">
+    <div class="container text-md-left p-0">
       <div class="row text-md-left">
 
         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 footer-div">
@@ -890,14 +888,15 @@
             Descarga nuestra App <span class="text-info">MyFibra<span class="footer-span">y</span>+</span></h4>
           <div class="MuiBox-root css-ndvpl">
             <a class="MuiBox-root css-0" href="" target="_blank" rel="noopener noreferrer"
-              data-testclass="app-store-link"><img class="footer-img"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYyIiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMTYyIDQ4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cmVjdCBzdHJva2U9IiNBNkE2QTYiIHN0cm9rZS13aWR0aD0iMS4yIiBmaWxsPSIjMDAwIiB4PSIuNiIgeT0iLjYiIHdpZHRoPSIxNjAuOCIgaGVpZ2h0PSI0Ni44IiByeD0iNiIvPgogICAgICAgIDxnIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01OC4yMzMgMzEuNTJoLTUuNTVsLTEuMzMzIDMuOTUySDQ5bDUuMjU2LTE0LjYyNWgyLjQ0Mmw1LjI1NyAxNC42MjVoLTIuMzlsLTEuMzMyLTMuOTUzem0tNC45NzUtMS44MjVoNC4zOTlsLTIuMTY5LTYuNDE2aC0uMDZsLTIuMTcgNi40MTZ6TTczLjMwNiAzMC4xNDFjMCAzLjMxNC0xLjc2NSA1LjQ0My00LjQzIDUuNDQzYTMuNTk1IDMuNTk1IDAgMCAxLTMuMzM5LTEuODY2aC0uMDVWMzloLTIuMThWMjQuODFoMi4xMXYxLjc3M2guMDRhMy43NjIgMy43NjIgMCAwIDEgMy4zOC0xLjg4NWMyLjY5NCAwIDQuNDcgMi4xMzkgNC40NyA1LjQ0M3ptLTIuMjM5IDBjMC0yLjE1OC0xLjExLTMuNTc4LTIuODA1LTMuNTc4LTEuNjY1IDAtMi43ODQgMS40NS0yLjc4NCAzLjU3OCAwIDIuMTQ5IDEuMTIgMy41ODggMi43ODQgMy41ODggMS42OTQgMCAyLjgwNS0xLjQxIDIuODA1LTMuNTg4ek04NC45OSAzMC4xNDFjMCAzLjMxNC0xLjc2NiA1LjQ0My00LjQzIDUuNDQzYTMuNTk1IDMuNTk1IDAgMCAxLTMuMzQtMS44NjZoLS4wNVYzOWgtMi4xOFYyNC44MWgyLjExdjEuNzczaC4wNGEzLjc2MiAzLjc2MiAwIDAgMSAzLjM4LTEuODg1YzIuNjkzIDAgNC40NyAyLjEzOSA0LjQ3IDUuNDQzem0tMi4yNCAwYzAtMi4xNTgtMS4xMTEtMy41NzgtMi44MDUtMy41NzgtMS42NjUgMC0yLjc4NSAxLjQ1LTIuNzg1IDMuNTc4IDAgMi4xNDkgMS4xMiAzLjU4OCAyLjc4NSAzLjU4OCAxLjY5NCAwIDIuODA1LTEuNDEgMi44MDUtMy41ODh6TTkyLjcxIDMxLjM5N2MuMTYyIDEuNDUgMS41NjQgMi40MDMgMy40OCAyLjQwMyAxLjgzNyAwIDMuMTU5LS45NTIgMy4xNTktMi4yNiAwLTEuMTM1LS43OTctMS44MTUtMi42ODQtMi4yOGwtMS44ODctLjQ1N2MtMi42NzMtLjY1LTMuOTE0LTEuOTA1LTMuOTE0LTMuOTQzIDAtMi41MjQgMi4xODktNC4yNTcgNS4yOTctNC4yNTcgMy4wNzYgMCA1LjE4NSAxLjczMyA1LjI1NiA0LjI1N2gtMi4xOTljLS4xMzItMS40Ni0xLjMzMy0yLjM0LTMuMDg4LTIuMzQtMS43NTUgMC0yLjk1Ni44OS0yLjk1NiAyLjE4OCAwIDEuMDM0Ljc2NyAxLjY0MiAyLjY0NCAyLjEwOGwxLjYwNC4zOTZjMi45ODcuNzEgNC4yMjggMS45MTUgNC4yMjggNC4wNTQgMCAyLjczNi0yLjE3IDQuNDUtNS42MiA0LjQ1LTMuMjMgMC01LjQxLTEuNjczLTUuNTUtNC4zMTloMi4yM3pNMTA2LjM1MiAyMi4yODZ2Mi41MjNoMi4wMTh2MS43MzNoLTIuMDE4djUuODc5YzAgLjkxMy40MDQgMS4zMzkgMS4yOTEgMS4zMzkuMjQtLjAwNC40OC0uMDIxLjcxNy0uMDV2MS43MjJhNS45NTcgNS45NTcgMCAwIDEtMS4yMS4xMDFjLTIuMTUgMC0yLjk4Ny0uODEtMi45ODctMi44Nzl2LTYuMTEyaC0xLjU0M1YyNC44MWgxLjU0M3YtMi41MjNoMi4xODl6TTEwOS41NCAzMC4xNDFjMC0zLjM1NSAxLjk2Ni01LjQ2MyA1LjAzNC01LjQ2MyAzLjA3NyAwIDUuMDM1IDIuMTA4IDUuMDM1IDUuNDYzIDAgMy4zNjUtMS45NDggNS40NjQtNS4wMzUgNS40NjRzLTUuMDM1LTIuMS01LjAzNS01LjQ2NHptNy44NDkgMGMwLTIuMzAxLTEuMDUtMy42Ni0yLjgxNS0zLjY2LTEuNzY2IDAtMi44MTUgMS4zNy0yLjgxNSAzLjY2IDAgMi4zMTEgMS4wNSAzLjY2IDIuODE1IDMuNjZzMi44MTUtMS4zNDkgMi44MTUtMy42NnpNMTIxLjQwNSAyNC44MWgyLjA3OHYxLjgxNGguMDVhMi41MzMgMi41MzMgMCAwIDEgMi41NTQtMS45MjZjLjI1LS4wMDEuNTAxLjAyNi43NDYuMDgxdjIuMDQ4YTMuMDMzIDMuMDMzIDAgMCAwLS45NzktLjEzMyAyLjE5IDIuMTkgMCAwIDAtMS42OTcuNzAyIDIuMjEyIDIuMjEyIDAgMCAwLS41NzMgMS43NTJ2Ni4zMjRoLTIuMTc5VjI0Ljgxek0xMzYuODc5IDMyLjM0Yy0uMjkzIDEuOTM2LTIuMTcgMy4yNjUtNC41NyAzLjI2NS0zLjA4OSAwLTUuMDA1LTIuMDc5LTUuMDA1LTUuNDEzIDAtMy4zNDUgMS45MjctNS41MTQgNC45MTMtNS41MTQgMi45MzYgMCA0Ljc4MyAyLjAyNyA0Ljc4MyA1LjI2di43NWgtNy40OTd2LjEzMmMtLjA3Ljc5NC4yMDMgMS41OC43NSAyLjE1OGEyLjc1OCAyLjc1OCAwIDAgMCAyLjEwNi44NjIgMi40IDIuNCAwIDAgMCAyLjQ1LTEuNWgyLjA3em0tNy4zNjYtMy4xODJoNS4zMDdhMi41NzEgMi41NzEgMCAwIDAtLjcxMy0xLjkyNSAyLjU0NyAyLjU0NyAwIDAgMC0xLjg5LS43ODEgMi42OCAyLjY4IDAgMCAwLTEuOTEzLjc4NyAyLjcwNiAyLjcwNiAwIDAgMC0uNzkgMS45MTl6Ii8+CiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTUwLjE3MyAxMy4zNTRjMC0yLjI4IDEuMjA3LTMuNjg3IDMuMTUtMy42ODdhMi43OTkgMi43OTkgMCAwIDEgMi45MSAyLjQzNmgtMS4wODJhMS44MDEgMS44MDEgMCAwIDAtMS44MjctMS40MThjLTEuMjU2IDAtMi4wNDIgMS4wMjgtMi4wNDIgMi42NjkgMCAxLjYzNy43ODYgMi42NjQgMi4wNDYgMi42NjRhMS43NTQgMS43NTQgMCAwIDAgMS44MjMtMS4yOTVoMS4wODJhMi43MzIgMi43MzIgMCAwIDEtMi45MDUgMi4zMTNjLTEuOTQ0IDAtMy4xNTUtMS40MDgtMy4xNTUtMy42ODJ6TTU3LjQyMSAxNC4yMTFjLS4wOS0uOTUuMzY0LTEuODcgMS4xNzEtMi4zNzRhMi40OTEgMi40OTEgMCAwIDEgMi42MzggMCAyLjUxNiAyLjUxNiAwIDAgMSAxLjE3IDIuMzc0IDIuNTE3IDIuNTE3IDAgMCAxLTEuMTY5IDIuMzc4IDIuNDkyIDIuNDkyIDAgMCAxLTIuNjQgMCAyLjUxNyAyLjUxNyAwIDAgMS0xLjE3LTIuMzc4em0zLjkwOCAwYzAtMS4xNS0uNTE0LTEuODIxLTEuNDE2LTEuODIxLS45MDYgMC0xLjQxNS42NzItMS40MTUgMS44MjEgMCAxLjE2LjUxIDEuODI2IDEuNDE1IDEuODI2LjkwMiAwIDEuNDE2LS42NzEgMS40MTYtMS44MjZ6TTYzLjc5OSAxMS41NjJINjQuOHYuODQzaC4wNzhjLjI3MS0uNjIuOTA0LTEgMS41NzYtLjk0NS41Mi0uMDQgMS4wMy4xNiAxLjM4NS41NDUuMzU2LjM4My41MTguOTA5LjQ0MiAxLjQyN3YzLjQzM0g2Ny4yNHYtMy4xN2MwLS44NTItLjM2OS0xLjI3Ni0xLjE0LTEuMjc2YTEuMjA4IDEuMjA4IDAgMCAwLS45MzcuMzggMS4yMiAxLjIyIDAgMCAwLS4zMjMuOTY0djMuMTAySDYzLjh2LTUuMzAzek03MS44MjMgMTEuNDZjMS4xODcgMCAxLjk2NC41NTUgMi4wNjYgMS40OWgtMWMtLjA5Ni0uMzktLjQ3NS0uNjM4LTEuMDY2LS42MzgtLjU4MSAwLTEuMDIzLjI3Ny0xLjAyMy42OTEgMCAuMzE3LjI2Ni41MTcuODM5LjY0OGwuODc3LjIwNGMxLjAwNC4yMzUgMS40NzQuNjY4IDEuNDc0IDEuNDQ3IDAgLjk5OS0uOTI2IDEuNjY2LTIuMTg2IDEuNjY2LTEuMjU2IDAtMi4wNzUtLjU3LTIuMTY4LTEuNTFoMS4wNDNjLjE4NS40Ni42Ni43MzQgMS4xNDkuNjYyLjY0OSAwIDEuMTEtLjI5MiAxLjExLS43MTYgMC0uMzE2LS4yNDctLjUyLS43NzYtLjY0N2wtLjkyLS4yMTVjLTEuMDA0LS4yMzktMS40Ny0uNjkxLTEuNDctMS40OCAwLS45NC44NTgtMS42MDIgMi4wNTEtMS42MDJ6TTc1LjMwNiAxMC42NzUgNzYuNTIzIDloMS4yMjJsLTEuMzYzIDEuNjc1aC0xLjA3NnptLjEwOC44ODdoMS4wMzd2NS4zMDNoLTEuMDM3di01LjMwM3pNNzguMDczIDE3LjM5NmgxLjA2NmMuMDg4LjM4NS41My42MzMgMS4yMzIuNjMzLjg2OCAwIDEuMzgyLS40MTQgMS4zODItMS4xMTV2LTEuMDE4aC0uMDc4YTEuNzczIDEuNzczIDAgMCAxLTEuNjMuODkxYy0xLjM0NyAwLTIuMTgtMS4wNDYtMi4xOC0yLjYzNCAwLTEuNjE3Ljg0My0yLjY3OSAyLjE5MS0yLjY3OWExLjgyOCAxLjgyOCAwIDAgMSAxLjY1OC45MzVoLjA4MnYtLjg0N2guOTk5djUuMzQ3YzAgMS4yMTMtLjk0NiAxLjk4Mi0yLjQzOSAxLjk4Mi0xLjMxOSAwLTIuMTcyLS41OTQtMi4yODMtMS40OTV6bTMuNy0zLjI0OGMwLTEuMDU3LS41NDQtMS43MzQtMS40MzItMS43MzQtLjg5NiAwLTEuNC42NzctMS40IDEuNzM0cy41MDQgMS43MzQgMS40IDEuNzM0Yy44OTMgMCAxLjQzMS0uNjcyIDEuNDMxLTEuNzM0ek04OC45MDYgMTYuODY1aC0xLjAwNHYtLjg0MmgtLjA4M2ExLjU4MiAxLjU4MiAwIDAgMS0xLjU5NS45NDUgMS43MSAxLjcxIDAgMCAxLTEuMzc2LS41NDUgMS43MjggMS43MjggMCAwIDEtLjQ0Mi0xLjQxOHYtMy40NDNoMS4wNDN2My4xN2MwIC44NTcuMzQ0IDEuMjY3IDEuMTEgMS4yNjcuMzYuMDM0LjcxNS0uMDk2Ljk2OC0uMzU1LjI1My0uMjYuMzc3LS42Mi4zMzYtLjk4di0zLjEwMmgxLjA0M3Y1LjMwM3pNOTUuMDMgMTUuNDM0YTIuMTQzIDIuMTQzIDAgMCAxLTIuMjg4IDEuNTM0IDIuMzkzIDIuMzkzIDAgMCAxLTEuODUtLjgwMiAyLjQxNiAyLjQxNiAwIDAgMS0uNTg4LTEuOTM2IDIuNDU0IDIuNDU0IDAgMCAxIC41ODctMS45NDMgMi40MyAyLjQzIDAgMCAxIDEuODQ3LS44MjdjMS40NjkgMCAyLjM1NSAxLjAwOCAyLjM1NSAyLjY3M3YuMzY1aC0zLjcyOHYuMDZjLS4wMzMuMzkzLjEuNzgyLjM2OSAxLjA3MS4yNjcuMjkuNjQ0LjQ1MiAxLjAzNy40NDdhMS4yNjQgMS4yNjQgMCAwIDAgMS4yNTYtLjY0M2gxLjAwM3ptLTMuNjY1LTEuNzFoMi42NjdjLjAyNi0uMzYtLjEtLjcxNC0uMzQ3LS45NzZhMS4yNyAxLjI3IDAgMCAwLS45NTMtLjM5OCAxLjM0NyAxLjM0NyAwIDAgMC0uOTcyLjM5OGMtLjI1Ny4yNTgtLjQuNjEtLjM5NS45NzZ6TTk2LjU0IDkuNDkyaDEuMDQydjcuMzczSDk2LjU0ek05OS4wMyAxNC4yMTFjLS4wOS0uOTUuMzYzLTEuODcgMS4xNzEtMi4zNzRhMi40OTEgMi40OTEgMCAwIDEgMi42MzggMCAyLjUxNiAyLjUxNiAwIDAgMSAxLjE3IDIuMzc0IDIuNTE3IDIuNTE3IDAgMCAxLTEuMTcgMi4zNzggMi40OTIgMi40OTIgMCAwIDEtMi42NCAwIDIuNTE3IDIuNTE3IDAgMCAxLTEuMTY5LTIuMzc4em0zLjkwOCAwYzAtMS4xNS0uNTE0LTEuODIxLTEuNDE2LTEuODIxLS45MDYgMC0xLjQxNi42NzItMS40MTYgMS44MjEgMCAxLjE2LjUxIDEuODI2IDEuNDE2IDEuODI2LjkwMiAwIDEuNDE2LS42NzEgMS40MTYtMS44MjZ6TTExMi43MzYgMTUuNDM0YTIuMTQzIDIuMTQzIDAgMCAxLTIuMjg4IDEuNTM0IDIuMzkzIDIuMzkzIDAgMCAxLTEuODUtLjgwMiAyLjQxNiAyLjQxNiAwIDAgMS0uNTg4LTEuOTM2IDIuNDU0IDIuNDU0IDAgMCAxIC41ODctMS45NDMgMi40MyAyLjQzIDAgMCAxIDEuODQ3LS44MjdjMS40NjkgMCAyLjM1NSAxLjAwOCAyLjM1NSAyLjY3M3YuMzY1aC0zLjcyOHYuMDZjLS4wMzMuMzkzLjEuNzgyLjM2OSAxLjA3MS4yNjcuMjkuNjQ0LjQ1MiAxLjAzNy40NDdhMS4yNjQgMS4yNjQgMCAwIDAgMS4yNTYtLjY0M2gxLjAwM3ptLTMuNjY1LTEuNzFoMi42NjdjLjAyNi0uMzYtLjEtLjcxNC0uMzQ3LS45NzZhMS4yNyAxLjI3IDAgMCAwLS45NTMtLjM5OCAxLjM0NyAxLjM0NyAwIDAgMC0uOTcyLjM5OGMtLjI1Ny4yNTgtLjQuNjEtLjM5NS45NzZ6TTExNC4xOTggMTEuNTYyaDEuMDAzdi44NDNoLjA3OGMuMjctLjYyLjkwMy0xIDEuNTc1LS45NDUuNTItLjA0IDEuMDMuMTYgMS4zODYuNTQ1LjM1NS4zODMuNTE4LjkwOS40NDEgMS40Mjd2My40MzNoLTEuMDQxdi0zLjE3YzAtLjg1Mi0uMzctMS4yNzYtMS4xNC0xLjI3NmExLjIwOCAxLjIwOCAwIDAgMC0uOTM3LjM4IDEuMjIgMS4yMiAwIDAgMC0uMzIzLjk2NHYzLjEwMmgtMS4wNDJ2LTUuMzAzek0xMjcuNjIgMTUuNDM0YTIuMTQzIDIuMTQzIDAgMCAxLTIuMjg3IDEuNTM0IDIuMzkzIDIuMzkzIDAgMCAxLTEuODUtLjgwMiAyLjQxNiAyLjQxNiAwIDAgMS0uNTg4LTEuOTM2IDIuNDU0IDIuNDU0IDAgMCAxIC41ODctMS45NDMgMi40MyAyLjQzIDAgMCAxIDEuODQ3LS44MjdjMS40NjkgMCAyLjM1NSAxLjAwOCAyLjM1NSAyLjY3M3YuMzY1aC0zLjcyOHYuMDZjLS4wMzMuMzkzLjEuNzgyLjM2OSAxLjA3MS4yNjcuMjkuNjQ0LjQ1MiAxLjAzNy40NDdhMS4yNjQgMS4yNjQgMCAwIDAgMS4yNTYtLjY0M2gxLjAwM3ptLTMuNjY0LTEuNzFoMi42NjdjLjAyNi0uMzYtLjEtLjcxNC0uMzQ3LS45NzZhMS4yNyAxLjI3IDAgMCAwLS45NTMtLjM5OCAxLjM0NyAxLjM0NyAwIDAgMC0uOTcyLjM5OGMtLjI1Ny4yNTktLjQuNjEtLjM5NS45NzZ6TTEyOS4xMzEgOS40OTJoMS4wNDJ2Ny4zNzNoLTEuMDQyeiIvPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgICAgIDxwYXRoIGQ9Im0yOS43OTEgMTYuNzU3LjI5Ny4wMmE2LjU5MyA2LjU5MyAwIDAgMSA1LjE4MiAyLjc3NSA2LjM1MSA2LjM1MSAwIDAgMC0zLjA2IDUuMzM4QTYuMTQ4IDYuMTQ4IDAgMCAwIDM2IDMwLjU0N2ExNC4wNCAxNC4wNCAwIDAgMS0xLjk3MSAzLjk3NmMtMS4xNjEgMS43Mi0yLjM3OSAzLjQwMS00LjMxMSAzLjQzMi0xLjg3OC4wNDMtMi41MDgtMS4wOTQtNC42NjItMS4wOTQtMi4xNzQgMC0yLjg0NiAxLjA2My00LjY0NyAxLjEzNy0xLjg0LjA2OC0zLjI0Ni0xLjgzNi00LjQ1LTMuNTQtMi40MDUtMy40OC00LjI3Ny05LjgwOC0xLjc2Ny0xNC4xMTNBNi45MSA2LjkxIDAgMCAxIDIwIDE2LjgzN2MxLjg0Mi0uMDM3IDMuNTUyIDEuMjMyIDQuNjg1IDEuMjMyIDEuMTEgMCAzLjIyNC0xLjUxOCA1LjQwNC0xLjI5MnptLjMyLTYuNzU3YTYuMjI2IDYuMjI2IDAgMCAxLTEuNDQ3IDQuNDg4IDUuMzQyIDUuMzQyIDAgMCAxLTQuMjAyIDEuOTY4IDUuOTI2IDUuOTI2IDAgMCAxIDEuNDg1LTQuMzIyQTYuNDU2IDYuNDU2IDAgMCAxIDMwLjExIDEweiIgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJub256ZXJvIi8+CiAgICA8L2c+Cjwvc3ZnPgo="
-                width="162" height="48" alt="Link to the Apple store to install the Pepephone app"></a><a
-              class="MuiBox-root css-0"
+              data-testclass="app-store-link">
+              <img class="footer-img" height="50" src="assets/img/appstore.svg" alt="">
+            </a>
+            <a class="MuiBox-root css-0"
               href="https://play.google.com/store/apps/details?id=com.spanishcoders.pepephone&amp;hl=es" target="_blank"
-              rel="noopener noreferrer" data-testclass="play-store-link"><img class="footer-img-2"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYyIiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMTYyIDQ4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IHgxPSI1MCUiIHkxPSIyNi4zNzIlIiB4Mj0iMzcuNjEzJSIgeTI9IjY1LjA0NSUiIGlkPSJhIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzAwQzJGRiIgb2Zmc2V0PSIwJSIvPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMDNFM0ZGIiBvZmZzZXQ9IjEwMCUiLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICAgIDxsaW5lYXJHcmFkaWVudCB4MT0iMCUiIHkxPSI1MCUiIHgyPSIxMDAlIiB5Mj0iNTAlIiBpZD0iYiI+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNGQjAiIG9mZnNldD0iMCUiLz4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI0ZEMCIgb2Zmc2V0PSIxMDAlIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9Ijg2LjI0MyUiIHkxPSIyOS41MDklIiB4Mj0iOS44MDglIiB5Mj0iODEuODYyJSIgaWQ9ImMiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjRkYzQjQ0IiBvZmZzZXQ9IjAlIi8+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNERjI1NTQiIG9mZnNldD0iMTAwJSIvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IHgxPSI4Ljg4NiUiIHkxPSIxOC4xMzIlIiB4Mj0iODUuNzM4JSIgeTI9IjY4Ljg0OCUiIGlkPSJkIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzExRDU3NCIgb2Zmc2V0PSIwJSIvPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMDBGMDc2IiBvZmZzZXQ9IjEwMCUiLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cmVjdCBzdHJva2U9IiNBNkE2QTYiIHN0cm9rZS13aWR0aD0iMS4yIiBmaWxsPSIjMDAwIiB4PSIuNiIgeT0iLjYiIHdpZHRoPSIxNjAuOCIgaGVpZ2h0PSI0Ni44IiByeD0iNiIvPgogICAgICAgIDxwYXRoIGQ9Ik05MS43MjcgMjYuNTZjMS4xOTcgMCAyLjE0Ny41MjggMi42NCAxLjExM2guMDc2di0uODEyaDIuMDkydjguOTQ4YzAgMy42OC0yLjE4NiA1LjE5MS00Ljc3IDUuMTkxLTIuNDMzIDAtMy44OTctMS42MjMtNC40NDgtMi45NDVsMS45Mi0uNzkzYy4zNDIuODEyIDEuMTc4IDEuNzc1IDIuNTI3IDEuNzc1IDEuNjU0IDAgMi42OC0xLjAyIDIuNjgtMi45Mjd2LS43MTdoLS4wNzZjLS40OTQuNjA1LTEuNDQ0IDEuMTMzLTIuNjQxIDEuMTMzLTIuNTEgMC00LjgwOC0yLjE3LTQuODA4LTQuOTY0IDAtMi44MTQgMi4yOTktNS4wMDIgNC44MDgtNS4wMDJ6bTQ5LjYwOC4yOTMgMi42MTkgNi4zNWguMDc1bDIuNTIzLTYuMzVIMTQ5bC02LjA1MSAxMy44MTNoLTIuMjk3bDIuMjM5LTQuOTM4LTMuOTI3LTguODc1aDIuMzcxem0tMzUuMjgtLjI5M2MyLjYwMyAwIDMuODc3IDIuMDU3IDQuMjk1IDMuMTdsLjIyOC41NjctNi43MDkgMi43NTZjLjUxMyAxIDEuMzEyIDEuNTEgMi40MzMgMS41MSAxLjEyMSAwIDEuOTAxLS41NDggMi40Ny0xLjM3OGwxLjcxMSAxLjEzM2MtLjU1LjgxMi0xLjg4MSAyLjIwOC00LjE4MSAyLjIwOC0yLjg1IDAtNC45NzgtMi4xOS00Ljk3OC00Ljk4MyAwLTIuOTY1IDIuMTQ3LTQuOTgzIDQuNzMxLTQuOTgzem0tNDkuMTUtNS41MTNjMi4zNzYgMCA0LjA2Ny45MjUgNS4zNCAyLjEzM2wtMS41MDEgMS40OTJjLS45MTItLjg1LTIuMTQ3LTEuNTEtMy44MzgtMS41MS0zLjEzNiAwLTUuNTg4IDIuNTEtNS41ODggNS42MjVzMi40NTIgNS42MjQgNS41ODggNS42MjRjMi4wMzIgMCAzLjE5MS0uODEgMy45MzMtMS41NDYuNjA4LS42MDUgMS4wMDctMS40NzMgMS4xNTktMi42NjNoLTUuMDkyVjI4LjA5aDcuMTYzYy4wNzcuMzc3LjExNS44My4xMTUgMS4zMiAwIDEuNTg3LS40MzggMy41NS0xLjg0NCA0Ljk0Ni0xLjM2OCAxLjQxNy0zLjExNyAyLjE3MS01LjQzNCAyLjE3MS00LjI5NSAwLTcuOTA2LTMuNDczLTcuOTA2LTcuNzM5czMuNjEtNy43NCA3LjkwNi03Ljc0em0xMy4wNyA1LjUxM2MyLjc3MyAwIDUuMDM1IDIuMDk1IDUuMDM1IDQuOTgzIDAgMi44NjgtMi4yNjIgNC45ODMtNS4wMzYgNC45ODMtMi43NzUgMC01LjAzNy0yLjExNS01LjAzNy00Ljk4MyAwLTIuODg4IDIuMjYyLTQuOTgzIDUuMDM3LTQuOTgzem0xMC45ODUgMGMyLjc3NCAwIDUuMDM1IDIuMDk1IDUuMDM1IDQuOTgzIDAgMi44NjgtMi4yNjEgNC45ODMtNS4wMzUgNC45ODMtMi43NzUgMC01LjAzNi0yLjExNS01LjAzNi00Ljk4MyAwLTIuODg4IDIuMjYxLTQuOTgzIDUuMDM2LTQuOTgzem01My4zNzUtLjAyN2MyLjUyNCAwIDQuNDc3IDEuNDUgNC40NzcgNC4wNTFWMzYuMmgtMi4xMjR2LTEuMTNoLS4wNzZjLS41MTMuNzczLTEuMzI4IDEuNDMzLTIuODA5IDEuNDMzLTEuOTM0IDAtMy42Ni0xLjI2My0zLjY2LTMuMjI0IDAtMi4xNDcgMi4xNDQtMy4yOTcgNC4yNS0zLjI5NyAxLjA0MyAwIDEuODk2LjMzOSAyLjI5NS41NjV2LS4xNWMtLjAyLTEuMjA3LTEuMTc2LTEuODg1LTIuMzE1LTEuODg1LS44MTYgMC0xLjU5My4yNjQtMi4wMTEgMS4wNzRsLTEuOTUzLS44MWMuNjgzLTEuNTQ1IDIuMzMzLTIuMjQyIDMuOTI2LTIuMjQyem0tMzQuMDc1LTQuOTU4djE0LjY0OWgtMi4yMDVWMjEuNTc1aDIuMjA1em0yMC40MTYuMDAxYzIuNDQgMCA0LjgzNyAxLjc1NCA0LjgzNyA0LjU0OSAwIDIuNzk0LTIuMzk4IDQuNTUtNC44MzcgNC41NWgtMy4wNzR2NS41NDloLTIuMlYyMS41NzZ6bTguMjUyIDB2MTQuNjQ4aC0yLjJWMjEuNTc2aDIuMnptLTU4Ljk1NCA2Ljk0NmMtMS41MiAwLTIuODMyIDEuMjI3LTIuODMyIDMuMDIxIDAgMS43NzQgMS4zMTIgMy4wMiAyLjgzMiAzLjAyIDEuNTIgMCAyLjgzMS0xLjI0NiAyLjgzMS0zLjAyIDAtMS43OTQtMS4zMTItMy4wMi0yLjgzLTMuMDJ6bTEwLjk4NiAwYy0xLjUyMSAwLTIuODMzIDEuMjI3LTIuODMzIDMuMDIxIDAgMS43NzQgMS4zMTIgMy4wMiAyLjgzMyAzLjAyIDEuNTIgMCAyLjgzLTEuMjQ2IDIuODMtMy4wMiAwLTEuNzk0LTEuMzEtMy4wMi0yLjgzLTMuMDJ6bTEwLjk1NyAwYy0xLjUyIDAtMi43OTQgMS4yODQtMi43OTQgMy4wNCAwIDEuNzM2IDEuMjczIDMgMi43OTQgMyAxLjUwMSAwIDIuNjc4LTEuMjY0IDIuNjc4LTMgMC0xLjc1Ni0xLjE3Ny0zLjA0LTIuNjc4LTMuMDR6bTQyLjc2IDMuMjNjLTEuMDgxIDAtMi4zMzQuNDM0LTIuMzM0IDEuNTY1IDAgLjg4NiAxLjAwNSAxLjI0MyAxLjcyNyAxLjI0MyAxLjI3IDAgMi40NDctLjk2IDIuNjE4LTIuMzE4LS41OS0uMjgyLTEuMDQzLS40OS0yLjAxMi0uNDl6bS0yOC41NDYtMy4yNjdjLTEuMTIxIDAtMi42OC45ODItMi42MjMgMi45MDdsNC40ODUtMS44NWMtLjI0Ni0uNjI0LS45ODctMS4wNTctMS44NjItMS4wNTd6bTE0LjYwMi00Ljg3aC0zLjEzMXY1LjAyaDMuMTNjMS42NDYgMCAyLjU4LTEuMzc1IDIuNTgtMi41MSAwLTEuMTU3LS45MzQtMi41MS0yLjU4LTIuNTF6TTczLjQ2OCA5YzEuMDU2LS4wMDEgMS45NTcuMzcgMi42NzUgMS4xMDYuNzE5LjczMiAxLjA4MiAxLjYzNiAxLjA4IDIuNjgzLjAwMiAxLjA1NC0uMzYgMS45Ni0xLjA3NSAyLjY4OGwtLjE2OS4xNjNjLS42ODcuNjI1LTEuNTMxLjk0LTIuNTExLjkzOS0xLjA2MiAwLTEuOTY0LS4zNjgtMi42NzktMS4xMDJsLS4xNTktLjE3MWMtLjYxLS42OTgtLjkxOC0xLjU0NC0uOTE3LTIuNTE3IDAtMS4wNTMuMzYtMS45NTggMS4wNzYtMi42ODhDNzEuNTA0IDkuMzcgNzIuNDA2IDkgNzMuNDY4IDl6TTYwLjc4NiA5Yy42Mi0uMDAxIDEuMTM3LjE1NSAxLjUzNy40NzIuMzg4LjMwOC42NS42NTMuNzcgMS4wMzRsLjAzMi4xMDItLjA5OS4wNC0uOTU0LjM5Ni0uMDM0LS4xM2MtLjA1Mi0uMTkzLS4xOC0uMzc4LS40MDEtLjU1N2wtLjExLS4wNzhjLS4xOTItLjExOS0uNDI5LS4xOC0uNzItLjE4LS4zMjkgMC0uNTk2LjA4OC0uODIyLjI2NC0uMjI0LjE3OC0uMzI0LjM3Ni0uMzI2LjYyOS4wMDIuMjI3LjA5My40MDcuMjk3LjU3Mi4yMTEuMTY2LjUzMy4zMjYuOTY2LjQ2Ni4zNTIuMTEzLjY0Ni4yMi44ODguMzI4LjI0Mi4xMS40ODYuMjUyLjczMi40My4yNTQuMTg0LjQ1LjQxNy41OC42OTMuMTMuMjc2LjE5NS41OTQuMTk1Ljk0OCAwIC4zNTctLjA3NS42ODItLjIyNi45NjctLjE1LjI4NS0uMzUyLjUxNC0uNjAzLjY4MWEyLjk1NCAyLjk1NCAwIDAgMS0xLjY1My41MDJsLS4yMDEtLjAwOWMtLjQ3LS4wMzgtLjkyOS0uMjExLTEuMzcyLS41MTFhMi40NDMgMi40NDMgMCAwIDEtMS4wMTItMS40NzVsLS4wMjUtLjA5OC4wOTYtLjAzNy45NTUtLjM4NS4wMzQuMTNjLjA5NC4zNjUuMjgxLjY2Ny41Ny45MTguMjkuMjQ4LjYwMi4zNjguOTU2LjM2OS4zNzUtLjAwMS42ODUtLjA5Ny45NDQtLjI4NmEuODcuODcgMCAwIDAgLjM3MS0uNzQ2Yy0uMDAyLS4zNjYtLjEyMy0uNjIzLS4zNzMtLjgxNS0uMjYtLjE5OS0uNjkzLS4zOTUtMS4yOTItLjU3Ni0uNjM5LS4yLTEuMTMtLjQ2LTEuNDcxLS43ODktLjM0Ni0uMzMxLS41MjMtLjc2Ni0uNTIyLTEuMjc3IDAtLjUzNi4yMi0xLjAxMS42NDItMS40LjQyNS0uMzk2Ljk4NC0uNTkzIDEuNjUxLS41OTJ6bTI5Ljc2My4xNTdhMi4yMDYgMi4yMDYgMCAwIDEgMS41MTcuNTc0bC0uMDAyLS4wMDFjLjQzMi4zODQuNjUxLjg4MS42NSAxLjQ1OSAwIC4zNTQtLjA5NC42NzUtLjI4My45NDlhMS43MTkgMS43MTkgMCAwIDEtLjQ1Ny40NTlsLS4xMDEuMDYyLjE1LjA3NmMuMTY0LjA5My4zMTIuMjEuNDQzLjM0OGwuMTI0LjE0NmMuMjQuMzA3LjM2Mi42Ny4zNjEgMS4wNzNhMS45NTkgMS45NTkgMCAwIDEtLjY3NyAxLjUyYy0uNDQ1LjM5OC0uOTguNi0xLjU4Ni42aC0yLjgxNlY5LjE1N3ptMjMuMjg1IDAgMy4yODQgNS4yMjEtLjAyOC0uOTg4VjkuMTU3aDEuMTQ3djcuMjY1aC0xLjEzM2wtMy40NDQtNS40ODYuMDI4Ljk4N3Y0LjQ5OWgtMS4xNDRWOS4xNTdoMS4yOXptLTM0LjI4IDAgMy4yODUgNS4yMjMtLjAyOC0uOTlWOS4xNTZoMS4xNDZ2Ny4yNjVoLTEuMTMzbC0zLjQ0NC01LjQ4OS4wMy45OXY0LjQ5OWgtMS4xNDZWOS4xNTdoMS4yOXptLTIyLjIxNyAwdjcuMjY1aC0xLjE0NVY5LjE1N2gxLjE0NXptNTQuMDIgMHYxLjA5OGgtMy4yMjR2MS45OTVoMi45MDd2MS4wNzhoLTIuOTA3djEuOTk2aDMuMjI0djEuMDk4aC00LjM2OFY5LjE1N2g0LjM2OHptLTI0Ljg3IDB2Ny4yNjVoLTEuMTQ1VjkuMTU3aDEuMTQ1em0tMzUuMDQyIDBjMS4xMTEtLjAwMSAyLjAxOS4zMzUgMi42OTQgMS4wMTIuNjc2LjY3MyAxLjAxNCAxLjU1NSAxLjAxMyAyLjYyIDAgMS4wNjQtLjMzNyAxLjk0OC0xLjAxMyAyLjYyMi0uNjc1LjY3Ni0xLjU4MyAxLjAxMi0yLjY5NCAxLjAxaC0yLjI4MlY5LjE1OHptNDMuNjQxIDB2Ni4xNjdoMy4wNjR2MS4wOThoLTQuMjFWOS4xNTdoMS4xNDZ6bTguMzQzIDB2MS4wOThoLTMuMjIzdjEuOTk1aDIuOTA2djEuMDc4aC0yLjkwNnYxLjk5NmgzLjIyM3YxLjA5OGgtNC4zNjhWOS4xNTdoNC4zNjh6bS0zNi41MTQgMGMuNjI2LS4wMDEgMS4xOC4yMSAxLjYzNy42MjUuNDYyLjQxNC42OTguOTUzLjY5NSAxLjU4NGEyLjA0MiAyLjA0MiAwIDAgMS0uNjk1IDEuNTgzIDIuMzU4IDIuMzU4IDAgMCAxLTEuNjM3LjYyNWgtMS4zODR2Mi44NDhoLTEuMTQ1VjkuMTU3em02LjU1My45NDJjLS43My4wMDEtMS4zMzQuMjQ5LTEuODM5Ljc1NS0uNS41MDUtLjc1IDEuMTQyLS43NTEgMS45MzUgMCAuNzk0LjI1IDEuNDMxLjc1MiAxLjkzNmwuMTU0LjE0NGMuNDIuMzY0LjkwNS41NjMgMS40NjkuNjA0bC4yMTUuMDA4Yy43My0uMDAxIDEuMzM1LS4yNSAxLjgzOS0uNzU2LjUwMS0uNTA2Ljc1MS0xLjE0Mi43NTMtMS45MzYtLjAwMi0uNzkzLS4yNTItMS40My0uNzUzLTEuOTM1LS41MDQtLjUwNi0xLjEwOS0uNzU0LTEuODM5LS43NTV6bS0yMi4wMjMuMTU2aC0xLjEzN3Y1LjA2OGgxLjEzN2MuNzE2IDAgMS4yODItLjE4IDEuNzItLjUzOGwuMTQtLjEyNmMuNDUxLS40MzkuNjgtMS4wNTMuNjgxLTEuODctLjAwMS0uODEtLjIzLTEuNDIyLS42OC0xLjg2NS0uNDU1LS40NDMtMS4wNjYtLjY2OC0xLjg2LS42N3ptMzkuMjQzIDIuOTk1aC0xLjY3MnYyLjA3M2gxLjcxMmMuMjc2LS4wMDEuNDk0LS4wNzguNjc0LS4yMzdsLjA4OC0uMDg3Yy4yMDEtLjIyNS4yOTUtLjQ1OS4yOTYtLjcxOC0uMDAxLS4yNTctLjA5Ny0uNDg2LS4zMDUtLjcxLS4yMDMtLjIxMy0uNDU2LS4zMi0uNzkzLS4zMjF6bS0yMy43NTItMi45OTVINjUuNTNsLS4wMDEgMi4yMmgxLjQwNmMuMzA1IDAgLjU0NC0uMDgzLjczOC0uMjUybC4wOTMtLjA5Yy4yMTUtLjI0LjMxNS0uNDkuMzE1LS43NjcgMC0uMjc4LS4xLS41MjgtLjMxNS0uNzY3LS4yMS0uMjMtLjQ3NS0uMzQyLS44MzEtLjM0NHptMjMuNjU0IDBoLTEuNTc0djEuOTE1aDEuNTMzYy4yNzIgMCAuNDg0LS4wNzIuNjU2LS4yMmwuMDgzLS4wOGMuMTkxLS4yMDkuMjgtLjQyMy4yOC0uNjYxYS45Ni45NiAwIDAgMC0uMjcyLS42NTljLS4xOC0uMTk3LS40MDMtLjI5My0uNzA2LS4yOTV6IiBmaWxsPSIjRkZGIi8+CiAgICAgICAgPHBhdGggZD0iTS41MjEuNDY0Qy4xOTQuODIyIDAgMS4zOCAwIDIuMTAzdjI1Ljc5NmMwIC43MjIuMTk0IDEuMjc4LjUyMSAxLjYzN2wuMDgzLjA4NSAxMy45NS0xNC40NVYxNC44M0wuNjA1LjM4LjUyLjQ2NHoiIGZpbGw9InVybCgjYSkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzIDkpIi8+CiAgICAgICAgPHBhdGggZD0iTTE0LjU1NSAxNC44M3YuMzQxbDQuNjQ5IDQuODE4LjEwNy0uMDYxIDUuNTA4LTMuMjQzYzEuNTc1LS45MjYgMS41NzUtMi40NDIgMC0zLjM2OGwtNS41MDgtMy4yNDMtLjEwNi0uMDYyLTQuNjUgNC44MTd6IiBmaWxsPSJ1cmwoI2IpIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMyA5KSIvPgogICAgICAgIDxwYXRoIGQ9Ik0uNTIxIDI5LjUzNmMuNTE4LjU3IDEuMzc1LjY0IDIuMzQuMDcybDE2LjQ1LTkuNjhMMTQuNTU1IDE1IC41MiAyOS41MzZ6IiBmaWxsPSJ1cmwoI2MpIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMyA5KSIvPgogICAgICAgIDxwYXRoIGQ9Im0uNTIxLjQ2NCAxNC4wMzQgMTQuNTM3IDQuNzU2LTQuOTI4TDIuODYxLjM5MkMyLjQxLjEyNiAxLjk4IDAgMS42IDAgMS4xNjggMCAuNzk2LjE2Mi41Mi40NjQiIGZpbGw9InVybCgjZCkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzIDkpIi8+CiAgICA8L2c+Cjwvc3ZnPgo="
-                width="162" height="48" alt="Link to Google play store to install the Pepephone app"></a></div>
+              rel="noopener noreferrer" data-testclass="play-store-link">
+              <img class="footer-img-2" height="50" src="assets/img/googleplay.svg" alt="">
+            </a>
+          </div>
 
 
 
